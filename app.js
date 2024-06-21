@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   const twitterBtn = document.getElementById("twitterBtn");
   twitterBtn.addEventListener('click', function() {
-    window.open('https://x.com/', '_blank');
+    window.open('https://x.com/50RUPEESSOL', '_blank');
   });
   const telegramBtn = document.getElementById("telegramBtn");
   telegramBtn.addEventListener('click', function() {
