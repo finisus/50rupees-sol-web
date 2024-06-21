@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const audio = new Audio('./metadata/arab50CentSong.mp3');
+  audio.loop = true;
+  audio.volume = 1.0;
+  
+  const landingPage = document.getElementById('landingPage');
+  const closeLandingBtn = document.getElementById('closeLandingBtn');
+  const mainPage = document.getElementById('mainPage');
+
+  landingPage.style.display = 'flex';
+  mainPage.style.display = 'none';
+
+  closeLandingBtn.addEventListener('click', function() {
+    audio.play().catch(error => {
+      console.log("Autoplay was prevented. Please interact with the page to play audio.");
+    });
+
+    landingPage.style.display = 'none';
+    mainPage.style.display = 'flex';
+  });
+
   const buyBtn = document.getElementById('buyBtn');
   buyBtn.addEventListener('click', function() {
     window.open('', '_blank');
