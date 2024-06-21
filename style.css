@@ -175,6 +175,7 @@ footer button {
   position: absolute;
   top: 0;
   margin-top: 640px;
+  margin-bottom: 32px;
   width: 600px;
   border: 2px solid var(--primary);
   display: flex;
