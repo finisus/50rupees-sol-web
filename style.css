@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'indian';
+  src: url('./metadata/prakrta/prakrta.ttf');
+}
+@font-face {
+  font-family: 'normal';
+  src: url('./metadata/mahaputra/mahaputra.ttf');
+}
+
+:root {
+  --background: rgba(28, 27, 23, 1.0);
+  --backgroundTranslucent: rgba(28, 27, 23, 0.69);
+  --text: rgba(255, 255, 255, 1.0);
+  --primary: rgba(235, 174, 94, 1.0);
+  --primaryTranslucent: rgba(235, 174, 94, 0.69);
+  --secondary: rgba(133,76,21, 1.0);
+  --secondaryTranslucent: rgba(133,76,21, 0.8);
+  --accent: rgba(190, 35, 21, 1.0);
+  --accentTranslucent: rgba(190, 35, 21, 0.69);
+}
+
+html {
+  height: 100%;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'normal';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+header {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+header h1 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 3.69rem;
+  font-family: 'indian';
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px; 
+}
+main button {
+  background-color: var(--backgroundTranslucent);
+  color: var(--text);
+  border: 2px solid var(--primary);
+  padding: 8px 12px;
+  font-family: 'normal';
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+footer {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; 
+  border: 2px solid var(--primary);
+  background-color: var(--backgroundTranslucent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+footer span {
+  font-family: 'normal';
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-align: start;
+  word-break: break-all;
+}
+footer button {
+  font-family: 'normal';
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  padding: 4px 8px;
+  backdrop-filter: blur(20px);
+  background-color: var(--backgroundTranslucent);
+  color: var(--text);
+  border: 2px solid var(--primary);
+  -webkit-backdrop-filter: blur(20px);
+}
