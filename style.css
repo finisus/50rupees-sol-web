@@ -32,6 +32,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  margin: 0;
   background-color: var(--background);
   color: var(--text);
   font-family: 'normal';
@@ -44,8 +45,9 @@ body {
 }
 
 header {
+  position: absolute;
+  top: 0;
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 header h1 {
   margin: 0;
@@ -55,16 +57,31 @@ header h1 {
 }
 
 #mainImg {
-  width: 80%; 
-  max-width: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 0;
+  margin-top: 128px;
+}
+#mainImg img {
+  width: 600px;
   border: 2px solid var(--primary);
-  margin-bottom: 16px;
+  margin-bottom: 0;
+}
+#mainImg span {
+  font-size: 1.88rem;
 }
 
 main {
+  position: absolute;
+  top: 0;
+  margin-top: 544px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 16px;
   grid-row-gap: 16px; 
 }
@@ -81,8 +98,9 @@ main button {
 }
 
 footer {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 16px;
   margin-left: 16px;
   margin-right: 16px;
   padding: 16px;
@@ -112,4 +130,38 @@ footer button {
   color: var(--text);
   border: 2px solid var(--primary);
   -webkit-backdrop-filter: blur(20px);
+}
+
+#memes {
+  position: absolute;
+  top: 0;
+  margin-top: 640px;
+  width: 600px;
+  border: 2px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+#memes img {
+  width: 100%;
+}
+
+@media screen and (max-width: 632px) {
+  #mainImg img {
+    width: 300px !important;
+  }
+  main {
+    margin-top: 384px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    grid-column-gap: 16px !important;
+    grid-row-gap: 16px !important; 
+  }
+  #memes {
+    margin-top: 544px !important;
+    width: 300px !important;
+  }
 }
