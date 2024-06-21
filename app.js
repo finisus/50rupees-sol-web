@@ -9,12 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   landingPage.style.display = 'flex';
   mainPage.style.display = 'none';
-
   closeLandingBtn.addEventListener('click', function() {
     audio.play().catch(error => {
       console.log("Autoplay was prevented. Please interact with the page to play audio.");
     });
-
     landingPage.style.display = 'none';
     mainPage.style.display = 'flex';
   });
@@ -33,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   const telegramBtn = document.getElementById("telegramBtn");
   telegramBtn.addEventListener('click', function() {
-    window.open('https://t.me/', '_blank');
+    window.open('https://t.me/FIFTYRUPEESSOL', '_blank');
   });
 
   const copyButton = document.getElementById('copyCaBtn');
