@@ -6,6 +6,10 @@
   font-family: 'normal';
   src: url('./metadata/mahaputra/mahaputra.ttf');
 }
+@font-face {
+  font-family: 'normal2';
+  src: url('./metadata/khaleefa.otf');
+}
 
 :root {
   --background: rgba(28, 27, 23, 1.0);
@@ -161,7 +165,7 @@ footer {
   -webkit-backdrop-filter: blur(20px);
 }
 footer span {
-  font-family: 'normal';
+  font-family: 'normal2';
   font-size: 1rem;
   letter-spacing: 2px;
   text-align: start;
