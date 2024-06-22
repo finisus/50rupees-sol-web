@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const buyBtn = document.getElementById('buyBtn');
   buyBtn.addEventListener('click', function() {
-    window.open('', '_blank');
+    window.open('https://www.pump.fun/613kqHEoHu1z85fV3eLEn1GwFpCPhi7VhS4HNmr6pump', '_blank');
   });
   const chartBtn = document.getElementById("chartBtn");
   chartBtn.addEventListener('click', function() {
-    window.open('https://dexscreener.com/solana/', '_blank');
+    window.open('https://www.pump.fun/613kqHEoHu1z85fV3eLEn1GwFpCPhi7VhS4HNmr6pump', '_blank');
   });
   const twitterBtn = document.getElementById("twitterBtn");
   twitterBtn.addEventListener('click', function() {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   const copyButton = document.getElementById('copyCaBtn');
-  const textToCopy = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
+  const textToCopy = "613kqHEoHu1z85fV3eLEn1GwFpCPhi7VhS4HNmr6pump";
   copyButton.addEventListener("click", async () => {
     try {
       // Try the modern Clipboard API first (if supported)

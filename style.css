@@ -135,6 +135,14 @@ main button {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
+main button:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+main button:active {
+  background-color: var(--backgroundTranslucent);
+  color: var(--text);
+}
 
 footer {
   position: fixed;
